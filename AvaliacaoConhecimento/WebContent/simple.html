@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Senior Tempo</title>
+<style>
+
+body.all {
+	background-color: antiquewhite;
+	margin-right: 1%;
+}
+div.botoes{text-align: center;}
+img.loader{position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; height: 10%}
+div.box{padding-left: 2%;padding-right: 2%; padding-bottom: 2%;}
+div.image{height: 100%; width: 100%;}
+div.cidade0{    font-weight: bold;}
+td.temp-max0,td.temp-max1,td.temp-max2,td.temp-max3,td.temp-max4,td.maiortemp{color:red;}
+td.temp-min0,td.temp-min1,td.temp-min2,td.temp-min3,td.temp-min4,td.menortemp{color:blue;}
+h3.box-title{font-size: 20px;     font-weight: bold;}
+h3.box-titleHoje{font-size: 24px}
+div.hoje0{background-repeat: no-repeat; background-position-y: 20%; background-position-x: 100%; }
+div.box-header with-border{height: 77px}
+
+</style>
+
+
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+<link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+<script src='build/Chart.min.js'></script>
+
+</head>
+<body class=all>
+
+	<!-- Loader Image -->
+	<div class=imagestyle>
+		<img class=loader src="build/loader.gif" id="image"
+			>
+	</div>
+
+
+
+	<!-- Header -->
+	<br>
+	<section class="content-header" id=header>
+		<h1>
+			Avaliação de conhecimentos <small>App tempo</small>
+		</h1>
+	</section>
+
+	<!-- Engloba todo conteúdo -->
+	<section class="content" id=content>
+
+
+
+<script></script>
+
+
+
+
+
+		<!-- linha 1 -->
+		<div class="row">
+			<!-- caixa procurar cidade -->
+			<div class="col-md-2">
+				<div class="box">
+					<div class="box-header with-border">
+						<h3 class="box-title">Procurar
+							cidade</h3> 
+					</div><p></p>
+					<p>
+						Cidade: <input type="text" id="cidade" value="">
+					</p>
+					<p>
+						Estado: <input type="text" id=estado value="">
+					</p>
+					
+					
+					
+					
+					
+					
+					
+					<div class= botoes>
+					
+					<a id=botao class="btn btn-primary btn-sm">
+    <span class="glyphicon glyphicon-search"></span> Procurar!
+					</a>
+					
+					<a id=favorito class="btn btn-warning btn-sm">
+    <span class="glyphicon glyphicon-star"></span> Favorito
+					</a>
+					
+				</div>
+			</div>
+</div>
+
+			<!-- caixa tempo hoje -->
+			<div class="col-md-2">
+				<div class="box">
+
+
+
+
+					<div class="hoje0">
+						<div class="box-header with-border">
+							<h3 class="box-titleHoje">Tempo Hoje</h3>
+							<div class="cidade0"></div>
+							<div class="descricao0" ></div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table class="table table-bordered">
+								<tr>
+									<td class="data0"></td>
+								</tr>
+								<tr>
+									<td class="temp-max0"></td>
+								</tr>
+								<tr>
+									<td class="temp-min0"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- caixa tempo amanhã1 -->
+			<div class="col-md-2">
+				<div class="box">
+					<div class="hoje1">
+						<div class="box-header with-border">
+							<h3 class="data1"></h3>
+							<div class="descricao1"></div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table class="table table-bordered">
+								<tr>
+									<td class="temp-max1"></td>
+								</tr>
+								<tr>
+									<td class="temp-min1"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- caixa tempo amanhã2 -->
+			<div class="col-md-2">
+				<div class="box">
+					<div class="hoje2"
+						style="background-repeat: no-repeat; background-position-y: 0%; background-position-x: 100%;">
+						<div class="box-header with-border">
+							<h3 class="data2"></h3>
+							<div class="descricao2"></div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table class="table table-bordered">
+								<tr>
+									<td class="temp-max2"></td>
+								</tr>
+								<tr>
+									<td class="temp-min2"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- caixa tempo amanhã3 -->
+			<div class="col-md-2">
+				<div class="box">
+					<div class="hoje3"
+						style="background-repeat: no-repeat; background-position-y: 0%; background-position-x: 100%;">
+						<div class="box-header with-border">
+							<h3 class="data3"></h3>
+							<div class="descricao3"></div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table class="table table-bordered">
+								<tr>
+									<td class="temp-max3"></td>
+								</tr>
+								<tr>
+									<td class="temp-min3"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- caixa tempo amanhã4 -->
+			<div class="col-md-2">
+				<div class="box">
+					<div class="hoje4"
+						style="background-repeat: no-repeat; background-position-y: 0%; background-position-x: 100%;">
+						<div class="box-header with-border">
+							<h3 class="data4"></h3>
+							<div class="descricao4"></div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body">
+							<table class="table table-bordered">
+								<tr>
+									<td class="temp-max4"></td>
+								</tr>
+								<tr>
+									<td class="temp-min4"></td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--  fecha linha -->
+		</div>
+
+
+		<!-- Nova Linha -->
+		<div class="row">
+
+			<!--  caixa maiores e menores temperaturas -->
+			<div class="col-md-4">
+				<div class="box">
+					<div class="box-header with-border">
+
+
+						<h3 class="box-title">Maiores e
+							menores temperaturas da semana</h3>
+						<div class="cidade0"></div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<table class="table table-bordered">
+							<tr>
+								<td class="maiortemp"></td>
+							</tr>
+							<tr>
+								<td class="menortemp"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- caixa praia -->
+			<div class="col-md-4">
+				<div class="box">
+					<div class="box-header with-border">
+						<h3 class="box-title"  >Praia</h3>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+						<table class="table table-bordered">
+							<tr>
+								<td class="partiuPraia" style ="    padding-top: 25px;"></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- caixa gráfico -->
+			<div class="col-md-4">
+				<div class="box">
+					<div class="box-header with-border">
+						<h3 class="box-title">Gráfico da
+							temperatura semanal</h3>
+						<div>Temperatura alta x baixa</div>
+					</div>
+					<!-- /.box-header -->
+					<div class="box-body">
+<table class="table table-bordered">
+
+						<canvas id="grafico" width="400" height="300"></canvas>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- fecha linha -->
+		</div>
+
+		<!-- fim do englobo body -->
+	</section>
+
+
+	<!-- footer -->
+	<footer class="main-footer"
+		style="position: fixed; bottom: 0; width: 100%; height: 44px;">
+		<div class="pull-right hidden-xs">
+			<b>Version</b> 0.0.1
+		</div>
+		<strong>Copyright &copy; 2015 <a
+			href="http://www.senior.com.br/">Senior Sistemas</a>.
+		</strong> All rights reserved.
+	</footer>
+
+	<!-- fim -->
+
+	<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+	<script src="plugins/fastclick/fastclick.min.js"></script>
+	<script src="dist/js/app.min.js"></script>
+	<script src="dist/js/demo.js"></script>
+	<script src="build/tempo.js"></script>
+
+</body>
+</html>
